@@ -2,7 +2,7 @@
 
 This repository hosts a forked version of @MNeMoNiCuZ GROQ LLM Node. Added the context abilty for Groqs API. The forked Node now can hold context from all chats using a random uuid4 ID key to call the chats context from the JSON file that has all the saved chats. Below I will leave the og way to use the node and then add my extra ways under. I highly recommed checking out the rest of @MNeMoNiCuZ nodes. 
 
-## ✨💬 Groq LLM API Node
+## Groq LLM API W/CONTEXT
 This node makes an API call to groq, and returns the response in text format.
 
 ![image](https://github.com/user-attachments/assets/eac84632-39d5-45de-b2be-4cd5c3545ecc)
