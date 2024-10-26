@@ -5,7 +5,7 @@ This repository hosts a forked version of @MNeMoNiCuZ GROQ LLM Node. Added the c
 ## ✨💬 Groq LLM API Node
 This node makes an API call to groq, and returns the response in text format.
 
-![image](https://github.com/MNeMoNiCuZ/ComfyUI-mnemic-nodes/assets/60541708/807eb22d-c48b-4156-9d36-d2abdb987910)
+![image](https://github.com/user-attachments/assets/eac84632-39d5-45de-b2be-4cd5c3545ecc)
 
 ### Setup
 You need to manually enter your [groq API key](https://console.groq.com/keys) into the `GroqConfig.ini` file.
