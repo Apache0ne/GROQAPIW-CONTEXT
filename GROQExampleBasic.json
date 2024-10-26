@@ -1,0 +1,361 @@
+{
+  "last_node_id": 61,
+  "last_link_id": 58,
+  "nodes": [
+    {
+      "id": 49,
+      "type": "Groq LLM API W/CONTEXT",
+      "pos": {
+        "0": 1283,
+        "1": 852
+      },
+      "size": {
+        "0": 400,
+        "1": 470
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "api_response",
+          "type": "STRING",
+          "links": [
+            58
+          ],
+          "slot_index": 0
+        },
+        {
+          "name": "success",
+          "type": "BOOLEAN",
+          "links": [
+            57
+          ],
+          "slot_index": 1
+        },
+        {
+          "name": "status_code",
+          "type": "STRING",
+          "links": [
+            56
+          ],
+          "slot_index": 2
+        },
+        {
+          "name": "conversation_id",
+          "type": "STRING",
+          "links": [
+            55
+          ],
+          "slot_index": 3
+        },
+        {
+          "name": "chat_history",
+          "type": "STRING",
+          "links": [
+            54
+          ],
+          "slot_index": 4
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Groq LLM API W/CONTEXT"
+      },
+      "widgets_values": [
+        "llama3-8b-8192",
+        "Use [system_message] and [user_input]",
+        "",
+        "",
+        0.85,
+        1024,
+        1,
+        4176187269,
+        "randomize",
+        2,
+        "",
+        false,
+        ""
+      ],
+      "color": "#222",
+      "bgcolor": "#000"
+    },
+    {
+      "id": 60,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1828,
+        "1": 672
+      },
+      "size": [
+        613.5104968457031,
+        279.72913587689254
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 58,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 57,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 895,
+        "1": 1082
+      },
+      "size": [
+        368.3570445541927,
+        132.27695377696773
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 55,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 61,
+      "type": "Note",
+      "pos": {
+        "0": 887,
+        "1": 1255
+      },
+      "size": [
+        379.3570445541927,
+        323.77695377696773
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [],
+      "title": "Convo ID'S",
+      "properties": {},
+      "widgets_values": [
+        ""
+      ],
+      "color": "#323",
+      "bgcolor": "#535"
+    },
+    {
+      "id": 59,
+      "type": "easy showAnything",
+      "pos": {
+        "0": 1819,
+        "1": 999
+      },
+      "size": [
+        312.96504230024857,
+        64.5473176950743
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "anything",
+          "type": "*",
+          "link": 57,
+          "shape": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "output",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "easy showAnything"
+      },
+      "color": "#232",
+      "bgcolor": "#353"
+    },
+    {
+      "id": 56,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1790,
+        "1": 1348
+      },
+      "size": [
+        680.8570445541927,
+        347.27695377696773
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 54,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#223",
+      "bgcolor": "#335"
+    },
+    {
+      "id": 58,
+      "type": "ShowText|pysssss",
+      "pos": {
+        "0": 1819,
+        "1": 1107
+      },
+      "size": [
+        332.78322411843055,
+        57.82004496780155
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 56,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null,
+          "shape": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShowText|pysssss"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#232",
+      "bgcolor": "#353"
+    }
+  ],
+  "links": [
+    [
+      54,
+      49,
+      4,
+      56,
+      0,
+      "STRING"
+    ],
+    [
+      55,
+      49,
+      3,
+      57,
+      0,
+      "STRING"
+    ],
+    [
+      56,
+      49,
+      2,
+      58,
+      0,
+      "STRING"
+    ],
+    [
+      57,
+      49,
+      1,
+      59,
+      0,
+      "*"
+    ],
+    [
+      58,
+      49,
+      0,
+      60,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.826446280991736,
+      "offset": [
+        -506.1810445541935,
+        -596.0313287769675
+      ]
+    }
+  },
+  "version": 0.4
+}
