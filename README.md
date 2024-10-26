@@ -42,8 +42,17 @@ Currently, the Groq API can be used for free, with very friendly and generous [r
 
 * Note: `json_mode` is not compatible with `stop`.
 
+**conversation_id**: If blank, the node will output a new convo_id 
 
-For additional information, please visit the [project's GitHub page](https://github.com/MNeMoNiCuZ/ComfyUI-mnemic-nodes?tab=readme-ov-file#-groq-llm-api-node).
+* Note: You need to copy/paste a id into the input to hold context
+
+* Note: GROQ rate limits Context to about 8k tokens input at a time so it cant be used for hour long chats
+
+* Note: It can be used for simple short tasks that need context at fast speeds EX. fine tuning prompts
+
+**chat_history**: Can see chat history
+
+For additional information on this node and more amazing nodes, please visit the [ComfyUI-mnemic-nodes](https://github.com/MNeMoNiCuZ/ComfyUI-mnemic-nodes?tab=readme-ov-file#-groq-llm-api-node).
 
 # Installation instructions
 
@@ -54,3 +63,4 @@ configparser
 groq
 torch
 ```
+ComfyUI-Manager (WIP)
